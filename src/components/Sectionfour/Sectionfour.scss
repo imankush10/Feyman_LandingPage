@@ -104,24 +104,29 @@
                     width: 10%;
                     font-size: 20px;
                     text-align: center;
-                    span {
-                        position: absolute;
-                        top: 50%;
-                        left: 0%;
-                        transform: translate(-50%, -50%);
-                        width: 30px;
-                        height: 30px;
-                        border: 2px solid transparent;
-                        border-image: linear-gradient(
-                            to right,
-                            #2b9aff,
-                            rgba(100, 24, 255, 0.730135),
-                            rgba(156, 33, 209, 0.76),
-                            rgba(211, 72, 149, 0.79)
-                        );
-                        // background-color: red;
-                        border-image-slice: 1;
+                     .wrapper-span{
+                        position: relative;
+                        width: 3rem;
+                        height: 3rem;
+                        background: linear-gradient(to right,
+                        #2b9aff,
+                        rgba(100, 24, 255, 0.730135),
+                        rgba(156, 33, 209, 0.76),
+                        rgba(211, 72, 149, 0.79));
                         border-radius: 50%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                    span {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        position: absolute;
+                        height: 90%;
+                        width: 90%;
+                        border-radius: 50%;
+                        background-color: #0E0819;
                     }
                     @include md {
                         display: block;
