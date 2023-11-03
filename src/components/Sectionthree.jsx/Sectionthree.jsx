@@ -15,11 +15,13 @@ const Sectionthree = () => {
                             <a href="" className="View-Live-Button">
                                 View Live
                             </a>
+                            <div className="overlay"></div>
                         </div>
                         <div className="Sectionthreep2left2 box">
                             <a href="" className="View-Live-Button">
                                 View Live
                             </a>{" "}
+                            <div className="overlay"></div>
                         </div>
                     </div>
                     <div className="Sectionthreep2right">
@@ -27,11 +29,13 @@ const Sectionthree = () => {
                             <a href="" className="View-Live-Button">
                                 View Live
                             </a>{" "}
+                            <div className="overlay"></div>
                         </div>
                         <div className="Sectionthreep2right2 box">
                             <a href="" className="View-Live-Button">
                                 View Live
                             </a>
+                            <div className="overlay"></div>
                         </div>
                     </div>
                 </div>
