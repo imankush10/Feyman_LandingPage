@@ -79,7 +79,9 @@
                 background-repeat: no-repeat;
                 text-align: center;
                 transition: opacity 0.3s;
-
+                
+                
+                
                 .View-Live-Button {
                     position: absolute;
                     top: 50%;
@@ -97,15 +99,29 @@
                     padding: 10px 20px;
                     border-radius: 20px;
                     z-index: 2;
+
                 }
-                &:hover {
-                    opacity: 0.3;
+                .overlay {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background: rgba(0, 0, 0, 0);
+                    transition: background 0.3s;
+                }
+                 &:hover {
+                    .overlay {
+                        background: rgba(0, 0, 0, 0.3);
+                    }
+
                     .View-Live-Button {
                         display: block;
                     }
                 }
+                
             }
-
+            
             .Sectionthreep2left2 {
                 position: relative;
                 height: 16vw;
@@ -133,8 +149,20 @@
                     border-radius: 20px;
                     z-index: 2;
                 }
+                .overlay {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background: rgba(0, 0, 0, 0);
+                    transition: background 0.3s;
+                }
                 &:hover {
-                    opacity: 0.3;
+                    .overlay {
+                        background: rgba(0, 0, 0, 0.3);
+                    }
+
                     .View-Live-Button {
                         display: block;
                     }
@@ -169,8 +197,20 @@
                     border-radius: 20px;
                     z-index: 2;
                 }
+                .overlay {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background: rgba(0, 0, 0, 0);
+                    transition: background 0.3s;
+                }
                 &:hover {
-                    opacity: 0.3;
+                    .overlay {
+                        background: rgba(0, 0, 0, 0.3);
+                    }
+
                     .View-Live-Button {
                         display: block;
                     }
@@ -203,8 +243,20 @@
                     z-index: 2;
                 }
 
+                .overlay {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background: rgba(0, 0, 0, 0);
+                    transition: background 0.3s;
+                }
                 &:hover {
-                    opacity: 0.3;
+                    .overlay {
+                        background: rgba(0, 0, 0, 0.3);
+                    }
+
                     .View-Live-Button {
                         display: block;
                     }
