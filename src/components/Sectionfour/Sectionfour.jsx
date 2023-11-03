@@ -14,7 +14,7 @@ const Sectionfour = () => {
                             className="RoadmapSno
                         "
                         >
-                            <span>1</span>
+                            <div class="wrapper-span"><span>1</span></div>
                         </div>
                         <div className="steps-content">
                             <div className="steps-content-heading">
@@ -33,11 +33,8 @@ const Sectionfour = () => {
                         </div>
                     </div>
                     <div className="Roadmapsteps">
-                        <div
-                            className="RoadmapSno
-                        "
-                        >
-                            <span>2</span>
+                        <div className="RoadmapSno">
+                            <div class="wrapper-span"><span>2</span></div>
                         </div>
                         <div className="steps-content">
                             <div className="steps-content-heading">
@@ -59,11 +56,8 @@ const Sectionfour = () => {
                         </div>
                     </div>
                     <div className="Roadmapsteps">
-                        <div
-                            className="RoadmapSno
-                        "
-                        >
-                            <span>3</span>
+                        <div className="RoadmapSno">
+                            <div class="wrapper-span"><span>3</span></div>
                         </div>
                         <div className="steps-content">
                             <div className="steps-content-heading">
@@ -85,7 +79,7 @@ const Sectionfour = () => {
                             className="RoadmapSno
                         "
                         >
-                            <span>4</span>
+                            <div class="wrapper-span"><span>4</span></div>
                         </div>
                         <div className="steps-content">
                             <div className="steps-content-heading">
@@ -111,7 +105,7 @@ const Sectionfour = () => {
                             className="RoadmapSno
                         "
                         >
-                            <span>5</span>
+                            <div class="wrapper-span"><span>5</span></div>
                         </div>
                         <div className="steps-content">
                             <div className="steps-content-heading">
