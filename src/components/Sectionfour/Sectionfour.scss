@@ -199,6 +199,11 @@
                 @include lg {
                     &:hover {
                         color: white;
+                        span {
+                            height: 90%;
+                            width: 90%;
+                            border: none;
+                        }
                     }
                 }
             }
