@@ -1,0 +1,202 @@
+@import "../../css-config/mixins.scss";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    .Sectionfour {
+        padding: 10vw;
+        .Heading_1 {
+            text-align: center;
+            font-size: 13px;
+            line-height: 15px;
+            font-family: Poppins;
+            font-weight: 600;
+            @include xsm {
+                font-size: 15px;
+                line-height: 20px;
+            }
+            @include sm {
+                font-size: 20px;
+                line-height: 27px;
+            }
+            @include md {
+                font-size: 25px;
+                line-height: 33px;
+            }
+            @include lg {
+                font-size: 30px;
+                line-height: 40px;
+            }
+        }
+        .gradient {
+            background: linear-gradient(
+                90.02deg,
+                #2b9aff 0%,
+                rgba(90, 47, 255, 0.67) 35.12%,
+                rgba(156, 33, 209, 0.76) 72.58%,
+                rgba(211, 72, 149, 0.79) 110.62%
+            );
+
+            -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text;
+        }
+        .Heading_2 {
+            color: white;
+            font-family: Poppins;
+            font-size: 30px;
+            font-weight: 700;
+            line-height: 60px;
+            letter-spacing: 0.02em;
+            text-align: center;
+            @include xsm {
+                font-size: 40px;
+                line-height: 70px;
+            }
+            @include sm {
+                font-size: 50px;
+                line-height: 80px;
+            }
+            @include md {
+                font-size: 60px;
+                line-height: 90px;
+            }
+            @include lg {
+                font-size: 70px;
+                line-height: 100px;
+            }
+        }
+        .Roadmap {
+            padding: 0% 5% 0% 5%;
+            margin: 7vw 0;
+            @include xsm {
+                padding: 0% 7% 0% 6%;
+            }
+            @include sm {
+                padding: 0% 9% 0% 7%;
+            }
+            @include md {
+                padding: 0% 13% 0% 9%;
+            }
+            @include lg {
+                padding: 0% 15% 0% 11%;
+            }
+
+            @include xl {
+                padding: 0% 17% 0% 12%;
+            }
+            .step1 {
+                color: white !important;
+            }
+            .Roadmapsteps {
+                box-sizing: border-box;
+                color: gray;
+                display: flex;
+                margin: 10px 0px;
+                @include lg {
+                    margin: 20px 0px;
+                    height: 12vw;
+                }
+                .RoadmapSno {
+                    display: none;
+                    aspect-ratio: 1/1;
+                    position: relative;
+                    width: 10%;
+                    font-size: 20px;
+                    text-align: center;
+                    span {
+                        position: absolute;
+                        top: 50%;
+                        left: 0%;
+                        transform: translate(-50%, -50%);
+                        width: 30px;
+                        height: 30px;
+                        border: 2px solid transparent;
+                        border-image: linear-gradient(
+                            to right,
+                            #2b9aff,
+                            rgba(100, 24, 255, 0.730135),
+                            rgba(156, 33, 209, 0.76),
+                            rgba(211, 72, 149, 0.79)
+                        );
+                        // background-color: red;
+                        border-image-slice: 1;
+                        border-radius: 50%;
+                    }
+                    @include md {
+                        display: block;
+                    }
+                }
+                .steps-content {
+                    justify-content: stretch;
+                    border: 2px dotted white;
+                    border-radius: 10px;
+                    padding: 1.5vw 4vw;
+                    width: 100%;
+                    box-sizing: border-box;
+                    @include md {
+                        width: 90%;
+                    }
+                    .steps-content-heading {
+                        font-family: Poppins;
+                        font-size: 12px;
+                        font-weight: 700;
+                        line-height: 20px;
+                        text-align: left;
+                        @include xsm {
+                            font-size: 14px;
+                            line-height: 18px;
+                        }
+                        @include sm {
+                            font-size: 16px;
+                            line-height: 22px;
+                        }
+                        @include md {
+                            font-size: 18px;
+                            line-height: 25px;
+                        }
+                        @include lg {
+                            font-size: 20px;
+                            line-height: 28px;
+                        }
+                        @include xl {
+                            font-size: 22px;
+                            line-height: 32px;
+                        }
+                    }
+                    .steps-content-objectives {
+                        margin-top: 4px;
+                        font-size: 10px;
+                        line-height: 15px;
+                        font-family: Outfit;
+                        @include xsm {
+                            font-size: 12px;
+                            line-height: 17px;
+                        }
+                        @include sm {
+                            font-size: 13px;
+                            line-height: 19px;
+                        }
+                        @include md {
+                            font-size: 15px;
+                            line-height: 22px;
+                        }
+                        @include lg {
+                            font-size: 16px;
+                            line-height: 25px;
+                        }
+                        @include xl {
+                            font-size: 18px;
+                            line-height: 28px;
+                        }
+                    }
+                }
+                @include lg {
+                    &:hover {
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+}

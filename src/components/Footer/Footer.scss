@@ -1,0 +1,62 @@
+@import "../../css-config/mixins.scss";
+@import url("https://fonts.googleapis.com/css2?family=Poller+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    .links {
+        padding: 0% 15%;
+        display: flex;
+        justify-content: space-between;
+        height: 35vh;
+        .logo {
+            font-family: "Poller One", serif;
+            color: white;
+            font-size: 50px;
+        }
+        .contact {
+            h3 {
+                color: white;
+                font-family: Poppins;
+                font-weight: 100;
+                font-size: 30px;
+                line-height: 40px;
+            }
+            span {
+                color: gray;
+                display: block;
+            }
+            .icons {
+                margin-top: 7vh;
+                span {
+                    display: inline;
+                }
+            }
+        }
+        .quick-links {
+            h3 {
+                color: white;
+                font-family: Poppins;
+                font-weight: 100;
+                font-size: 30px;
+                line-height: 40px;
+            }
+            span {
+                color: gray;
+                display: block;
+                a {
+                    text-decoration: none;
+                    color: gray;
+                }
+            }
+        }
+    }
+    .copyright {
+        color: gray;
+        font-family: Poppins;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 40px;
+        text-align: center;
+    }
+}

@@ -1,0 +1,222 @@
+@import "../../css-config/mixins.scss";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
+.Sectionthree {
+    padding-top: 20vh;
+    .Sectionthreep1 {
+        .s3h1 {
+            text-align: center;
+            font-family: Poppins;
+            font-size: 18px;
+            font-weight: 600;
+            line-height: 24px;
+            letter-spacing: 0em;
+            @include xsm {
+                font-size: 21px;
+                line-height: 28px;
+            }
+            @include sm {
+                font-size: 24px;
+                line-height: 32px;
+            }
+            @include md {
+                font-size: 27px;
+                line-height: 36px;
+            }
+            @include lg {
+                font-size: 30px;
+                line-height: 40px;
+            }
+        }
+        .gradient {
+            background: linear-gradient(
+                90.02deg,
+                #2b9aff 0%,
+                rgba(90, 47, 255, 0.67) 35.12%,
+                rgba(156, 33, 209, 0.76) 72.58%,
+                rgba(211, 72, 149, 0.79) 110.62%
+            );
+
+            -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text;
+        }
+        .s3h2 {
+            text-align: center;
+            font-family: Poppins;
+            font-size: 30px;
+            font-weight: 700;
+            line-height: 50px;
+            letter-spacing: 0.02em;
+            color: white;
+            @include xsm {
+                font-size: 35px;
+                line-height: 55px;
+            }
+            @include sm {
+                font-size: 40px;
+                line-height: 60px;
+            }
+            @include md {
+                font-size: 45px;
+                line-height: 65px;
+            }
+            @include lg {
+                font-size: 50px;
+                line-height: 70px;
+            }
+        }
+    }
+    .Sectionthreep2 {
+        // height: 90vh;
+        padding: 0px 15vw;
+        display: flex;
+        .Sectionthreep2left {
+            width: 70%;
+            .Sectionthreep2left1 {
+                position: relative;
+                height: 25vw;
+                background-image: url(../../assets/project-1.jpg);
+                background-size: cover;
+                background-repeat: no-repeat;
+                text-align: center;
+                transition: opacity 0.3s;
+
+                .View-Live-Button {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    display: none;
+                    width: fit-content;
+                    background-color: #fff;
+                    color: black;
+                    font-family: Poppins;
+                    font-size: 15px;
+                    font-weight: 400;
+                    line-height: 20px;
+                    text-decoration: none;
+                    padding: 10px 20px;
+                    border-radius: 20px;
+                    z-index: 2;
+                }
+                &:hover {
+                    opacity: 0.3;
+                    .View-Live-Button {
+                        display: block;
+                    }
+                }
+            }
+
+            .Sectionthreep2left2 {
+                position: relative;
+                height: 16vw;
+                background-image: url(../../assets/project-2.jpg);
+                background-size: cover;
+                background-repeat: no-repeat;
+                text-align: center;
+                transition: opacity 0.3s;
+
+                .View-Live-Button {
+                    display: none;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    width: fit-content;
+                    background-color: #fff;
+                    color: black;
+                    font-family: Poppins;
+                    font-size: 15px;
+                    font-weight: 400;
+                    line-height: 20px;
+                    text-decoration: none;
+                    padding: 10px 20px;
+                    border-radius: 20px;
+                    z-index: 2;
+                }
+                &:hover {
+                    opacity: 0.3;
+                    .View-Live-Button {
+                        display: block;
+                    }
+                }
+            }
+        }
+        .Sectionthreep2right {
+            width: 30%;
+            .Sectionthreep2right1 {
+                position: relative;
+                height: 20.5vw;
+                background-image: url(../../assets/project-3.jpg);
+                background-size: cover;
+                background-repeat: no-repeat;
+                transition: opacity 0.3s;
+
+                text-align: center;
+                .View-Live-Button {
+                    display: none;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    background-color: #fff;
+                    color: black;
+                    font-family: Poppins;
+                    font-size: 15px;
+                    font-weight: 400;
+                    line-height: 20px;
+                    text-decoration: none;
+                    padding: 10px 20px;
+                    border-radius: 20px;
+                    z-index: 2;
+                }
+                &:hover {
+                    opacity: 0.3;
+                    .View-Live-Button {
+                        display: block;
+                    }
+                }
+            }
+            .Sectionthreep2right2 {
+                position: relative;
+                height: 20.5vw;
+                background-image: url(../../assets/project-4.jpg);
+                background-size: cover;
+                background-repeat: no-repeat;
+                text-align: center;
+                transition: opacity 0.3s;
+
+                .View-Live-Button {
+                    display: none;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    background-color: #fff;
+                    color: black;
+                    font-family: Poppins;
+                    font-size: 15px;
+                    font-weight: 400;
+                    line-height: 20px;
+                    text-decoration: none;
+                    padding: 10px 20px;
+                    border-radius: 20px;
+                    z-index: 2;
+                }
+
+                &:hover {
+                    opacity: 0.3;
+                    .View-Live-Button {
+                        display: block;
+                    }
+                }
+            }
+        }
+        .box {
+            border-radius: 10px;
+            margin: 20px 10px;
+            @include md {
+                border-radius: 20px;
+            }
+        }
+    }
+}

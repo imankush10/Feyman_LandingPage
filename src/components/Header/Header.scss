@@ -1,0 +1,101 @@
+@import "../../css-config/mixins.scss";
+@import url("https://fonts.googleapis.com/css2?family=Poller+One&display=swap");
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    padding: 2vw 5vw;
+    font-size: 0.9rem;
+    @include sm {
+        font-size: 0.75rem;
+    }
+    @include md {
+        font-size: 1rem;
+    }
+    @include lg {
+        font-size: 1.5rem;
+    }
+
+    .nav-logo {
+        font-family: "Poller One", serif;
+        color: white;
+    }
+    .nav-links {
+        display: flex;
+        font-family: "Outfit", sans-serif;
+        display: none;
+        @include sm {
+            display: flex;
+        }
+    }
+    .nav-links-options {
+        ul {
+            list-style: none;
+            display: flex;
+            li {
+                transition: 0.7 ease;
+                // width: 10vw;
+                width: 60px;
+                @include xsm {
+                    width: 75px;
+                }
+                @include sm {
+                    width: 100px;
+                }
+                @include md {
+                    width: 125px;
+                }
+                @include lg {
+                    width: 150px;
+                }
+                .atag {
+                    color: white;
+                    text-decoration: none;
+                }
+            }
+            li:hover {
+                color: rgb(0, 0, 0);
+            }
+        }
+    }
+    .nav-links-letstalk {
+        width: 60px;
+        background-color: #fff;
+        color: black;
+        text-align: center;
+        padding: 0vw 1vw;
+        margin: auto;
+        margin: -0.7vw 0vw;
+        cursor: pointer;
+        padding: 0.8vw 0vw;
+        @include xsm {
+            width: 75px;
+        }
+        @include sm {
+            width: 100px;
+        }
+        @include md {
+            width: 125px;
+        }
+        @include lg {
+            width: 150px;
+        }
+    }
+    .hamburger {
+        display: block;
+        cursor: pointer;
+        .bar {
+            display: block;
+            width: 25px;
+            height: 3px;
+            margin: 4px auto;
+            -webkit-transition: all 0.3 ease-in-out;
+            transition: all 0.3 ease-in-out;
+            background-color: #fff;
+            margin-left: 20px;
+        }
+        @include sm {
+            display: none;
+        }
+    }
+}
